@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ticketing</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎫</text></svg>">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <header class="topbar" id="topbar" hidden>
+    <a class="brand" href="#/">🎫 Ticketing</a>
+    <nav>
+      <a href="#/">Tableau de bord</a>
+      <a href="#/tickets">Tickets</a>
+      <a href="#/tickets/new" class="btn btn-primary btn-sm">+ Nouveau</a>
+      <a href="#/users" id="nav-users" hidden>Utilisateurs</a>
+    </nav>
+    <div class="me">
+      <span id="me-name"></span>
+      <button class="btn btn-sm" id="logout">Déconnexion</button>
+    </div>
+  </header>
+  <main id="view"></main>
+  <div id="toast" class="toast" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>
